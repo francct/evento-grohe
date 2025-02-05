@@ -8,58 +8,32 @@
     <title>Document</title>
 </head>
 
-<body class="flex flex-col items-center">
+<body class="flex flex-col items-center max-w-screen-lg mx-auto p-8">
 
-    <h1 class="font-bold text-3xl">Evento Grohe</h1>
+    <p>Martedì 18 Febbraio</p>
+    <h1 class="font-bold text-3xl">Evento formativo Grohe per Installatori | Termoidraulica Cannavò</h1>
+    <p>Un'occasione imperdibile per gli installatori di scoprire le ultime novità e tecniche di Grohe! A seguire
+        apericena!</p>
+    <h3>Data e ora</h3>
+    <p>Martedì 18 Febbraio 2025, ore 18:00</p>
+    <h3>Località</h3>
+    <div>
+        <p>4 Spa Resort Hotel</p>
+        <p>Via Nazionale 114, 95021 Aci Castello (CT)</p>
+        <div class="rounded-lg overflow-hidden shadow">
+            <iframe class="max-w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6327.443237089604!2d15.122138211392471!3d37.53805902564402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313fc9c6cfff855%3A0xd924bfc4c15d0c1!2s4%20Spa%20Resort%20Hotel!5e0!3m2!1sit!2sit!4v1738763940572!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
 
-
-
-    <section>
-        <!-- Contenuto Noscript per SEO addizionale -->
-        <noscript><a
-                href="https://www.eventbrite.it/e/biglietti-evento-formativo-grohe-per-installatori-termoidraulica-cannavo-1235687206699"
-                rel="noopener noreferrer" target="_blank">Acquista biglietti su Eventbrite</a></noscript>
-        <!-- Puoi personalizzare questo bottone a tuo piacere -->
-        <button id="eventbrite-widget-modal-trigger-1235687206699" type="button"
-            class="bg-red-600 text-white px-8 py-2 rounded-full font-medium shadow cursor-pointer mt-4">Conferma la
-            presenza</button>
-
-        <script src="https://www.eventbrite.it/static/widgets/eb_widgets.js"></script>
-
-        <script type="text/javascript">
-            var exampleCallback = function () {
-                console.log('Ordine completato.');
-            };
-
-            window.EBWidgets.createWidget({
-                widgetType: 'checkout',
-                eventId: '1235687206699',
-                modal: true,
-                modalTriggerElementId: 'eventbrite-widget-modal-trigger-1235687206699',
-                onOrderComplete: exampleCallback
-            });
-        </script>
-    </section>
-
-    <section>
+    <section id="eventbrite-widget" class="w-full">
         <div id="eventbrite-widget-container-1235687206699"></div>
-
         <script src="https://www.eventbrite.it/static/widgets/eb_widgets.js"></script>
-
         <script type="text/javascript">
-            var exampleCallback = function () {
-                console.log('Ordine completato.');
-            };
-
             window.EBWidgets.createWidget({
-                // Required
                 widgetType: 'checkout',
                 eventId: '1235687206699',
                 iframeContainerId: 'eventbrite-widget-container-1235687206699',
-
-                // Optional
-                iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-                onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                iframeContainerHeight: 500,
             });
         </script>
     </section>
