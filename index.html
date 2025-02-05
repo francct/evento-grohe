@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body class="flex flex-col items-center">
+
+    <h1 class="font-bold text-3xl">Evento Grohe</h1>
+
+
+
+    <section>
+        <!-- Contenuto Noscript per SEO addizionale -->
+        <noscript><a
+                href="https://www.eventbrite.it/e/biglietti-evento-formativo-grohe-per-installatori-termoidraulica-cannavo-1235687206699"
+                rel="noopener noreferrer" target="_blank">Acquista biglietti su Eventbrite</a></noscript>
+        <!-- Puoi personalizzare questo bottone a tuo piacere -->
+        <button id="eventbrite-widget-modal-trigger-1235687206699" type="button"
+            class="bg-red-600 text-white px-8 py-2 rounded-full font-medium shadow cursor-pointer mt-4">Conferma la
+            presenza</button>
+
+        <script src="https://www.eventbrite.it/static/widgets/eb_widgets.js"></script>
+
+        <script type="text/javascript">
+            var exampleCallback = function () {
+                console.log('Ordine completato.');
+            };
+
+            window.EBWidgets.createWidget({
+                widgetType: 'checkout',
+                eventId: '1235687206699',
+                modal: true,
+                modalTriggerElementId: 'eventbrite-widget-modal-trigger-1235687206699',
+                onOrderComplete: exampleCallback
+            });
+        </script>
+    </section>
+
+    <section>
+        <div id="eventbrite-widget-container-1235687206699"></div>
+
+        <script src="https://www.eventbrite.it/static/widgets/eb_widgets.js"></script>
+
+        <script type="text/javascript">
+            var exampleCallback = function () {
+                console.log('Ordine completato.');
+            };
+
+            window.EBWidgets.createWidget({
+                // Required
+                widgetType: 'checkout',
+                eventId: '1235687206699',
+                iframeContainerId: 'eventbrite-widget-container-1235687206699',
+
+                // Optional
+                iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+            });
+        </script>
+    </section>
+</body>
+
+</html>
